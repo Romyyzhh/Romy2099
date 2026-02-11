@@ -1,0 +1,45 @@
+.glare-hover {
+    position: relative;
+    width: var(--gh-width);
+    height: var(--gh-height);
+    background: var(--gh-bg);
+    border-radius: var(--gh-br);
+    border: 1px solid var(--gh-border);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.glare-hover::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: var(--gh-size);
+    height: 200%;
+    background: linear-gradient(var(--gh-angle),
+            transparent,
+            var(--gh-rgba),
+            transparent);
+    transform: translate(-50%, -50%) translate(-200%, 200%);
+    transition: transform var(--gh-duration) ease-in-out;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.glare-hover:hover::after {
+    transform: translate(-50%, -50%) translate(200%, -200%);
+}
+
+.glare-hover--play-once:hover::after {
+    animation: glare-sweep var(--gh-duration) ease-in-out forwards;
+}
+
+@keyframes glare-sweep {
+    from {
+        transform: translate(-50%, -50%) translate(-200%, 200%);
+    }
+
+    to {
+        transform: translate(-50%, -50%) translate(200%, -200%);
+    }
+}

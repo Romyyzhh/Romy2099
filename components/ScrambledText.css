@@ -1,0 +1,8 @@
+.text-block {
+  /* Removed restrictive styles to allow parent control */
+}
+
+.char {
+  will-change: transform;
+  display: inline-block;
+}
