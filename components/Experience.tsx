@@ -28,21 +28,21 @@ export default function Experience() {
             id: "002",
             title: "Gym Majapahitz",
             subtitle: "Gym Website",
-            image: "/assets/gymm.png",
+            image: "/assets/gymm.PNG",
             link: "https://github.com/Romyyzhh/GymMajapahitz",
         },
         {
             id: "003",
             title: "Furnishare",
             subtitle: "Marketplace",
-            image: "/assets/uyguy.png",
+            image: "/assets/uyguy.PNG",
             link: "https://github.com/Romyyzhh/project-noirve",
         },
         {
             id: "004",
             title: "Village Map Territory Area",
             subtitle: "Saripan Village Map",
-            image: "/assets/map.png",
+            image: "/assets/map.PNG",
             link: "https://github.com/Romyyzhh/SIG-Journey-Maps",
         },
     ];
@@ -195,7 +195,7 @@ export default function Experience() {
                         { image: "/assets/redeye.jpg", text: "Night Eye" },
                         { image: "/assets/redhorse.png", text: "Red Horse" },
                         { image: "/assets/kominfo.png", text: "Kominfo" },
-                        { image: "/assets/ungu.png", text: "Advokasi" },
+                        { image: "/assets/Ungu.png", text: "Advokasi" },
                         { image: "/assets/bph.png", text: "BPH" },
                         { image: "/assets/psdm.png", text: "PSDM" },
                         { image: "/assets/litbang.png", text: "Litbang" }
