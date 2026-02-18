@@ -108,7 +108,7 @@ export default function Projects() {
         <section ref={containerRef} id="gallery" className="relative h-screen bg-black overflow-hidden flex items-center justify-center">
 
             {/* Images Container - Smaller size as requested */}
-            <div className="relative w-[80vw] h-[50vh] md:w-[65vw] md:h-[65vh] overflow-hidden rounded-[3rem]">
+            <div className="relative w-[90vw] h-[30vh] md:w-[65vw] md:h-[65vh] overflow-hidden rounded-[2rem]">
                 {projects.map((project, index) => (
                     <div
                         key={index}
