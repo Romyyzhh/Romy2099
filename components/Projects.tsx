@@ -119,6 +119,7 @@ export default function Projects() {
                             src={project.image}
                             alt={project.title}
                             fill
+                            loading="lazy"
                             className="object-cover"
                         />
                         <div className="absolute inset-0 bg-black/10"></div>

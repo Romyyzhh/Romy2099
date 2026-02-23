@@ -126,6 +126,7 @@ export default function Experience() {
                                     src={experiment.image}
                                     alt={experiment.title}
                                     fill
+                                    loading="lazy"
                                     className="object-cover transition-transform duration-300 group-hover:scale-105"
                                 />
                                 {/* Overlay on hover */}
@@ -171,7 +172,7 @@ export default function Experience() {
                             blurStrength={10}
                             textClassName="text-5xl md:text-7xl font-black uppercase text-white leading-tight mb-4"
                         >
-                            GRAPHIC DESIGN PROJECTS
+                            GRAPHIC & VISUAL DESIGN PROJECTS
                         </ScrollReveal>
                     </div>
 

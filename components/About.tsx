@@ -56,17 +56,18 @@ export default function About() {
     }, []);
 
     return (
-        <section ref={containerRef} id="about" className="relative min-h-screen bg-black py-20 px-4 md:px-6 lg:px-12 flex items-center overflow-hidden">
+        <section ref={containerRef} id="about" className="relative min-h-screen bg-black py-16 md:py-20 px-4 sm:px-6 lg:px-12 flex items-center overflow-hidden">
 
 
             <div className="max-w-7xl mx-auto w-full relative z-10">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-10 lg:gap-12 items-center">
 
                     {/* Left Side - Text Content */}
-                    <div className="space-y-8">
+                    <div className="space-y-6 sm:space-y-8">
                         {/* Name */}
-                        <div className="about-fade overflow-hidden">
-                            <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black uppercase leading-none tracking-tighter break-words">
+                        <div className="about-fade">
+                            <h1 className="font-black uppercase leading-none tracking-tighter text-[2.5rem] sm:text-6xl md:text-7xl lg:text-6xl xl:text-7xl 2xl:text-8xl"
+                                style={{ wordBreak: 'keep-all' }}>
                                 <div className="text-white">MUHAMMAD</div>
                                 <div className="text-white">ALVIN</div>
                                 <div className="text-white">KAROMY</div>
@@ -113,7 +114,7 @@ export default function About() {
 
                     {/* Right Side - Profile Photo */}
                     <div className="about-fade relative flex justify-center lg:justify-end">
-                        <div className="w-full max-w-md">
+                        <div className="w-full max-w-[260px] sm:max-w-sm md:max-w-md">
                             <ProfileCardComponent
                                 avatarUrl="/assets/ugvvg.jpeg"
                                 miniAvatarUrl="/assets/ugvvg.jpeg"
